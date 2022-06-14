@@ -1,0 +1,871 @@
+body {
+    font-family: 'DM Sans';
+    margin: 0;
+    width: 100%;
+    height: 300vh;
+    display: grid;
+    grid-template-areas: "nav"
+        "header"
+        "nosotros"
+        "noticias"
+        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 3% 15% 39% 21% 22%;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+
+/*----------------------------------------NAV--------------------------------------*/
+nav {
+    grid-area: "nav";
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logotipo {
+    width: 100px;
+    height: auto;
+}
+
+#logoimg {
+    width: 150px;
+}
+
+#lista_nav {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.link_nav {
+    text-decoration: none;
+    color: black;
+}
+
+.link_nav:hover {
+    text-decoration: underline;
+}
+
+#btn_ingresar {
+    background: #5227cc;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 25px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+#btn_enviar:hover,
+#btn_ingresar:hover {
+    background-color: #7749f8;
+}
+
+#btn_enviar:active,
+button:active {
+    transform: translateY(1px);
+}
+
+/*-----------MODAL-----------------*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 500ms ease;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    width: 700px;
+    height: 450px;
+    box-shadow: 0 5px 20px 2px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row-reverse;
+    transition: all 500ms ease;
+    transform: translateY(150px);
+}
+
+.modal-registrar {
+    color: black;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    padding: 0 15px;
+    font-size: 30px;
+    position: absolute;
+}
+
+.close:hover,
+.close:focus {
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modal-img {
+    background-image: url(/Materiales/imagen-modal.JPG);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 0 0 20px
+}
+
+#modal-registrar {
+    background-color: whitesmoke;
+    width: 50%;
+    border-radius: 0 20px 20px 0;
+}
+
+
+#flechaleft {
+    transform: scaleX(-1);
+    margin-left: 10px;
+}
+
+#registro {
+    display: flex;
+    flex-direction: column;
+}
+
+#titulo-emp {
+    color: #5298ff;
+    font-weight: bold;
+    margin-top: 5px;
+
+}
+
+#titulo-org {
+    color: #5227cc;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#empresa {
+    display: flex;
+    margin: 1em;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px 0px rgb(0 0 0 / 0.2);
+}
+
+#icono-maletin {
+    width: 15%;
+    background-color: #5298ff;
+    border-radius: 10px 0 0 10px;
+}
+
+#organizacion {
+    display: flex;
+    margin: 1em;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px 0px rgb(0 0 0 / 0.2);
+}
+
+#icono-persona {
+    width: 15%;
+    background-color: #7749f8;
+    border-radius: 10px 0 0 10px;
+}
+
+.flechita {
+    margin-left: 80%;
+}
+
+/*--------------------------------------HEADER-------------------------------------*/
+header {
+    grid-area: "header";
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(Materiales/manos.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#texto_header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,
+h3 {
+    width: auto;
+    color: white;
+}
+
+h3 {
+    margin: 0 20%;
+}
+
+/*-------------------------------------NOSOTROS------------------------------------*/
+main {
+    grid-area: "nosotros";
+    background-color: #5298ff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 55% 45%;
+}
+
+#nosotros {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: #5298ff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 40% 40% 10%;
+    margin: 0 5%;
+}
+
+#oficina {
+    grid-column: 1;
+    grid-row: 2;
+    background-image: url(/Materiales/oficina.png);
+    background-size: cover;
+    background-position: top;
+    margin: 0 0 3% 0;
+}
+
+#soluciones_empresas {
+    grid-column: 2;
+    grid-row: 2;
+    color: white;
+    padding: 3%;
+}
+
+#voluntariado {
+    grid-column: 2;
+    grid-row: 3;
+    background-image: url(/Materiales/voluntariado.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 3% 0 0 0;
+}
+
+#soluciones_organizaciones {
+    grid-column: 1;
+    grid-row: 3;
+    color: white;
+    padding: 3%;
+}
+
+.titulos_nosotros {
+    margin-top: 0;
+}
+
+#categorias {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-rows: 3fr 5fr;
+}
+
+#categorias_titulo {
+    grid-row: 1;
+    margin: 4% 10% 0;
+}
+
+#lista_categorias {
+    grid-row: 2;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    gap: 15px;
+}
+
+#voluntario {
+    width: 200px;
+    height: 170px;
+    background: #dc3545;
+    color: white;
+    border-radius: 15px;
+}
+
+#donar {
+    width: 200px;
+    height: 170px;
+    background: #ff9c09;
+    color: white;
+    border-radius: 15px;
+}
+
+#reciclar {
+    width: 200px;
+    height: 170px;
+    background: #28a745;
+    color: white;
+    border-radius: 15px;
+}
+
+#llamados_laborales {
+    width: 200px;
+    height: 170px;
+    background: #17a2b8;
+    color: white;
+    border-radius: 15px;
+}
+
+.icono {
+    padding: 40px 10px 30px 40px;
+    width: 60px;
+}
+
+.icono_voluntario {
+    padding: 30px 40px;
+    width: 30px;
+}
+
+.icono_reciclar {
+    padding: 40px 10px 22px 40px;
+    width: 60px;
+}
+
+.icono_maletin {
+    padding: 40px 10px 16px 40px;
+    width: 60px;
+}
+
+.icono_mas {
+    width: 18px;
+    vertical-align: top;
+    margin: 22px 0 0 45px;
+}
+
+/*-------------------------------------NOTICIAS------------------------------------*/
+#noticias {
+    grid-area: "noticias";
+    background-color: #5298ff;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 1fr 3fr;
+}
+
+#seccion_noticias {
+    grid-row: 1;
+    text-align: center;
+    align-self: end;
+}
+
+#titulo_noticias {
+    font-size: 2em;
+    margin: 0%;
+}
+
+.ver_todas {
+    margin: 0%;
+    color: white;
+}
+.noticia {
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 5fr;
+}
+
+.noticia{
+    border-radius: 0 0 5% 5%; 
+}
+.text_noticia{
+    color: black;
+    margin: 10px;
+}
+#ver_mas_noticia{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+#calendario_reloj{
+    display: flex;
+    justify-content: space-around;
+}
+.calendario_reloj{
+    display: flex;
+    align-items: center;
+}
+
+#not_1 {
+    background-image: url(/Materiales/1.jpg);
+    background-size: cover;
+    background-position: center;  
+    border-radius: 0 0 5% 5%;  
+}
+#not_2 {
+    background-image: url(/Materiales/2.jpg);
+    background-size: cover;
+    background-position: center;  
+    border-radius: 0 0 5% 5%;
+}
+#not_3 {
+    background-image: url(/Materiales/3.jpg);
+    background-size: cover;
+    background-position: center;  
+    border-radius: 0 0 5% 5%;
+}
+#not_4 {
+    background-image: url(/Materiales/4.jpg);
+    background-size: cover;
+    background-position: center;  
+    border-radius: 0 0 5% 5%;
+}
+#not_5 {
+    background-image: url(/Materiales/5.jpg);
+    background-size: cover;
+    background-position: center;  
+    border-radius: 0 0 5% 5%;
+}
+#not_6 {
+    background-image: url(/Materiales/6.jpg);
+    background-size: cover;
+    background-position: center;  
+    border-radius: 0 0 5% 5%;
+}
+#not_7 {
+    background-image: url(/Materiales/7.jpg);
+    background-size: cover;
+    background-position: center;  
+    border-radius: 0 0 5% 5%;
+}
+#not_8 {
+    background-image: url(/Materiales/8.jpg);
+    background-size: cover;
+    background-position: center;  
+    border-radius: 0 0 5% 5%;
+}
+#not_9 {
+    background-image: url(/Materiales/9.jpg);
+    background-size: cover;
+    background-position: center;  
+    border-radius: 0 0 5% 5%;
+}
+#not_10 {
+    background-image: url(/Materiales/10.jpg);
+    background-size: cover;
+    background-position: center;  
+    border-radius: 0 0 5% 5%;
+}
+#not_11 {
+    background-image: url(/Materiales/11.jpg);
+    background-size: cover;
+    background-position: center;  
+    border-radius: 0 0 5% 5%;
+}
+#not_12 {
+    background-image: url(/Materiales/12.jpg);
+    background-size: cover;
+    background-position: center;  
+    border-radius: 0 0 5% 5%;
+}
+
+/*------------------------CARROUSEL---------------------------*/
+
+body {
+    margin: 0%;
+}
+
+.container_carrousel {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carrousel {
+    width: 79%;
+    max-width: 120em;
+    background-color: #5298ff;
+    overflow: hidden;
+}
+
+.carrousel .grande {
+    width: 300%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+    transform: translateX(0%);
+}
+
+.carrousel .noticias {
+    width: calc(100% / 3);
+    min-height: 30vh;
+    background-color: #5298ff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.noticia {
+    width: 20%;
+    background-color: white;
+}
+
+.carrousel .puntos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding-right: 2.5em;
+}
+
+.carrousel .punto {
+    width: 1em;
+    height: 1em;
+    background-color: whitesmoke;
+    margin: .2em;
+    list-style: none;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
+}
+
+.carrousel .punto.activo {
+    background-color: #1c78fd;
+}
+
+/*--------------------------------------FOOTER-------------------------------------*/
+footer {
+    grid-area: "footer";
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+
+#formulario {
+    grid-row: 1;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#form_img {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 10px;
+}
+
+#laptop {
+    width: 90%;
+}
+
+#form {
+    display: flex;
+}
+
+#form_contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+#contacto_color {
+    color: black;
+}
+
+#name,
+#email,
+textarea {
+    padding: 3px 0;
+    margin-right: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#btn_enviar {
+    margin-left: 39%;
+    margin-top: 30px;
+    background: #5227cc;
+    border-radius: 10020px;
+    border: none;
+    padding: 10px 25px;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background: linear-gradient(135deg, rgba(82, 152, 255, 1) 0%, rgba(82, 39, 204, 1) 50%);
+}
+
+#footer {
+    grid-row: 2;
+    color: white;
+    display: grid;
+    grid-template-columns: 3fr 5fr 2fr;
+    margin: 7px 0 35px;
+    border: 1px solid white;
+    border-right-width: 0px;
+    border-left-width: 0px;
+}
+
+#logo_blanco {
+    grid-column: 1;
+    grid-row: 1;
+    width: 35%;
+    margin-top: 30px;
+    margin-left: 140px;
+}
+
+#lista {
+    grid-column: 2;
+    grid-row: 1;
+    list-style: none;
+}
+
+.link_footer {
+    color: white;
+    text-decoration: none;
+}
+
+.link_footer:hover {
+    text-decoration: underline;
+}
+
+#redes {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+/*----------------------RESPONSIVE-------------------------------*/
+
+@media (max-width: 749px){
+    .noticia_dos , .noticia_tres , .noticia_cuatro{
+        display: none;
+    }
+    .noticia{
+        width: 70%;
+    }   
+}
+
+@media (max-width: 414px){
+
+    body {
+        font-family: 'DM Sans';
+        margin: 0;
+        width: 100%;
+        height: 300vh;
+        display: grid;
+        grid-template-areas: "nav"
+            "header"
+            "nosotros"
+            "noticias"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 3% 15% 70% 21% 22%;
+    }
+    
+    #lista_nav{
+        display: block
+    }
+
+    main{
+        grid-template-rows: 40% 60%;
+    }
+
+    #lista_categorias{
+        padding-left: 0%;
+    }
+
+    #categorias{
+        grid-template-rows: 2fr 5fr;
+    }
+    
+    #nosotros {
+        background-color: #5298ff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 5%;
+    }
+    #oficina {
+        margin: 5% 0 3% 0;
+        height: 15%;
+    }
+    #voluntariado {
+        margin: 3% 0 0 0;
+        height: 15%;
+    }
+
+    .noticia_dos , .noticia_tres , .noticia_cuatro{
+        display: none;
+    }
+    
+    .noticia{
+        width: 70%;
+    }
+    
+    #form{
+        display: block;
+    }
+    #formulario {
+        grid-row: 1;
+        background-color: whitesmoke;
+        width: 100%;
+        height: 100%;
+    }
+
+    #formulario{
+        display: block;
+    }
+    #form_img{
+        display: none;
+    }
+    #name, #email, textarea{
+        margin-right: 0px;
+    }
+    
+    #logo_blanco {
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+   
+    .modal-content{
+        width: 100%;
+    }
+
+    #modal-img{
+        width: 0%;
+    }
+    #modal-registrar{
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+@media (min-width: 885px) and (max-width: 1500px) {
+    .noticia_cuatro {
+        display: none;
+    }
+    .noticia{
+        width: 30%;
+    }
+}
+
+@media (max-width: 884px) and (min-width: 750px){
+
+    main{
+        grid-template-rows: 42% 58%;
+    } 
+
+    .noticia_tres, .noticia_cuatro {
+        display: none;
+    }
+    
+    .noticia{
+        width: 40%;
+    }
+}
+
+@media (max-width: 749px) and (min-width: 415px){
+
+    body {
+        font-family: 'DM Sans';
+        margin: 0;
+        width: 100%;
+        height: 300vh;
+        display: grid;
+        grid-template-areas: "nav"
+            "header"
+            "nosotros"
+            "noticias"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 3% 15% 70% 21% 22%;
+    }
+    .modal-content{
+        width: 390px;
+    }
+
+    #modal-img{
+        width: 0%;
+    }
+    #modal-registrar{
+        width: 100%;
+        border-radius: 20px;
+    }
+
+        #lista_nav{
+        display: block
+    }
+
+    #nosotros {
+        background-color: #5298ff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 5%;
+    }
+
+    #oficina {   
+        margin: 0 0 3% 0;
+        height: 20%;
+    }
+
+    #soluciones_empresas {
+        color: white;
+        padding: 3%;
+    }
+
+    #voluntariado {
+        margin: 3% 0 0 0;
+        height: 20%;
+    }
+
+    #soluciones_organizaciones {
+        color: white;
+        padding: 3%;
+        }
+
+    #lista_categorias{
+        padding-left: 0%;
+    }
+
+    #categorias{
+        grid-template-rows: 1fr 2fr;
+    }
+
+    .noticia_cuatro , .noticia_tres{
+        display: none;
+    }
+    
+    #formulario{
+        display: block;
+    }
+    #form_img{
+        display: none;
+    }
+    #name, #email, textarea{
+        margin-right: 0px;
+    }
+    
+    #logo_blanco {
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+}

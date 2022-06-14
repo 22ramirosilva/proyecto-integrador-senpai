@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=DM Sans" rel="stylesheet">
+
+    <title>Nexos</title>
+</head>
+
+<body id="body">
+
+    <nav>
+        <div id="logotipo">
+            <a href="#body"><img id="logoimg" src="/Materiales/logo.png" alt="logo"></a>
+        </div>
+        <ul id="lista_nav">
+            <li><b><a class="link_nav" href="#nosotros">Nosotros</a></b></li>
+            <li><b><a class="link_nav" href="#noticias">Noticias</a></b></li>
+            <li><b><a class="link_nav" href="">Ayuda</a></b></li>
+        </ul>
+
+        <button id="btn_ingresar">INGRESAR</button>
+    </nav>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-registrar">
+                <p><img id="flechaleft" src="/Materiales/icono-flecha.png" alt="flecha"> volver atras</p>
+
+                <h3 class="modal-registrar">
+                    <center><b>REGISTRAR</b></center>
+                </h3>
+
+                <div id="registro">
+
+                    <div id="empresa">
+                        <div id="icono-maletin"></div>
+                        <div id="mi-empresa">
+                            <h3 id="titulo-emp">MI EMPRESA</h3>
+                            <p>Breve explicación a lo que nos referimos</p>
+                            <img class="flechita" src="/Materiales/icono-flecha.png" alt="flecha">
+                        </div>
+                    </div>
+
+                    <div id="organizacion">
+                        <div id="icono-persona"></div>
+                        <div id="mi-org">
+                            <h3 id="titulo-org">MI ORGANIZACIÓN</h3>
+                            <p>Estamos para ayudarlos a tener éxito</p>
+                            <img class="flechita" src="/Materiales/icono-flecha.png" alt="flecha">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="modal-img"></div>
+        </div>
+    </div>
+
+
+    <header>
+        <div id="texto_header">
+            <h1>
+                <center>¡Actúa para cambiar el mundo!</center>
+            </h1>
+            <h3>
+                <center>Fomentamos el vínculo entre empresas y organizaciones civiles para generar un impacto
+                    positivo en la sociedad. <br>
+                    Descubrí diferentes maneras de involucrar tu organización con la sociedad.</center>
+            </h3>
+        </div>
+
+    </header>
+    <main>
+        <article id="nosotros">
+            <div id="oficina"></div>
+            <div id="soluciones_empresas">
+                <h2 class="titulos_nosotros">Soluciones para empresas</h2>
+                <p class="texto_nosotros">Generamos un medio para que las emrpesas se involucren en actividades de
+                    responsabilidad social. <br>
+                    ¡Creá un grupo de voluntarios en tu organización y se parte del cambio!</p>
+            </div>
+            <div id="voluntariado"></div>
+            <div id="soluciones_organizaciones">
+                <h2 class="titulos_nosotros">Soluciones para organizaciones</h2>
+                <p class="texto_nosotros">Apoyamos a las organizaciones sociales para que alcancen sus objetivos.
+                    Ponemos a su disposición una
+                    comunidad de voluntarios dispuestos a apoyarlas en sus necesidades. <br>
+                    Equipos de voluntarios por empresas dispuestos a potenciar tu impacto en la sociedad.</p>
+            </div>
+        </article>
+
+        <article id="categorias">
+            <div id="categorias_titulo">
+                <h2>
+                    <center> Encuentra las mejores oportunidades</center>
+                </h2>
+                <p>
+                    <center>La plataforma cuenta con gran variedad de proyectos locales (sociales, educativos y
+                        medioambientales),
+                        donde encontraras el que mejor se adapte a la experiencia que estas buscando. <br> Te ayudamos
+                        en la
+                        coordinación con la organización de forma simple y rápida.</center>
+                </p>
+            </div>
+
+            <div>
+                <ul id="lista_categorias">
+                    <li id="voluntario">
+                        <img class="icono_voluntario" src="/Materiales/icono-mano.png" alt="icono_mano">
+                        <img class="icono_mas" src="/Materiales/icono-mas.png" alt="icono_mas">
+                        <h3>Ser voluntario</h3>
+                    </li>
+                    <li id="donar">
+                        <img class="icono" src="/Materiales/icono-mano-corazon.png" alt="icono_mano_corazon">
+                        <img class="icono_mas" src="/Materiales/icono-mas.png" alt="icono_mas">
+                        <h3>Donar</h3>
+                    </li>
+                    <li id="reciclar">
+                        <img class="icono_reciclar" src="/Materiales/icono-reciclar.png" alt="icono_reciclar">
+                        <img class="icono_mas" src="/Materiales/icono-mas.png" alt="icono_mas">
+                        <h3>Reciclar</h3>
+                    </li>
+                    <li id="llamados_laborales">
+                        <img class="icono_maletin" src="/Materiales/icono-maletin.png" alt="icono_maletin">
+                        <img class="icono_mas" src="/Materiales/icono-mas.png" alt="icono_mas">
+                        <h3>Llamados laborales</h3>
+                    </li>
+
+                </ul>
+            </div>
+
+        </article>
+    </main>
+
+    <section id="noticias">
+        <div id="seccion_noticias">
+            <h1 id="titulo_noticias">Noticias</h1>
+            <a class="ver_todas" href="">
+                <p class="ver_todas">Ver todas</p>
+            </a>
+        </div>
+
+
+        <div class="container_carrousel">
+            <div class="carrousel">
+                <div class="grande">
+                    <div class="noticias">
+                        <div class="noticia noticia_uno">
+                            <div id="not_1"></div>
+                            <div>
+                                <div id="calendario_reloj">
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-calendario.png" alt="calendario">
+                                        <p>20/08/22</p>
+                                    </div>
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-reloj.png" alt="reloj">
+                                        <p>5 min</p>
+                                    </div>
+                                </div>
+                                <h4 class="text_noticia">Lorem ipsum dolor.</h4>
+                                <p class="text_noticia">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <div id="ver_mas_noticia">
+                                    <p>Ver mas</p>
+                                    <img src="/Materiales/icono-flecha.png" alt="flecha">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="noticia noticia_dos">
+                            <div id="not_2"></div>
+                            <div>
+                                <div id="calendario_reloj">
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-calendario.png" alt="calendario">
+                                        <p>20/08/22</p>
+                                    </div>
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-reloj.png" alt="reloj">
+                                        <p>5 min</p>
+                                    </div>
+                                </div>
+                                <h4 class="text_noticia">Lorem ipsum dolor.</h4>
+                                <p class="text_noticia">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <div id="ver_mas_noticia">
+                                    <p>Ver mas</p>
+                                    <img src="/Materiales/icono-flecha.png" alt="flecha">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="noticia noticia_tres">
+                            <div id="not_3"></div>
+                            <div>
+                                <div id="calendario_reloj">
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-calendario.png" alt="calendario">
+                                        <p>20/08/22</p>
+                                    </div>
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-reloj.png" alt="reloj">
+                                        <p>5 min</p>
+                                    </div>
+                                </div>
+                                <h4 class="text_noticia">Lorem ipsum dolor.</h4>
+                                <p class="text_noticia">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <div id="ver_mas_noticia">
+                                    <p>Ver mas</p>
+                                    <img src="/Materiales/icono-flecha.png" alt="flecha">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="noticia noticia_cuatro">
+                            <div id="not_4"></div>
+                            <div>
+                                <div id="calendario_reloj">
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-calendario.png" alt="calendario">
+                                        <p>20/08/22</p>
+                                    </div>
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-reloj.png" alt="reloj">
+                                        <p>5 min</p>
+                                    </div>
+                                </div>
+                                <h4 class="text_noticia">Lorem ipsum dolor.</h4>
+                                <p class="text_noticia">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <div id="ver_mas_noticia">
+                                    <p>Ver mas</p>
+                                    <img src="/Materiales/icono-flecha.png" alt="flecha">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="noticias">
+                        <div class="noticia noticia_uno">
+                            <div id="not_5"></div>
+                            <div>
+                                <div id="calendario_reloj">
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-calendario.png" alt="calendario">
+                                        <p>20/08/22</p>
+                                    </div>
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-reloj.png" alt="reloj">
+                                        <p>5 min</p>
+                                    </div>
+                                </div>
+                                <h4 class="text_noticia">Lorem ipsum dolor.</h4>
+                                <p class="text_noticia">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <div id="ver_mas_noticia">
+                                    <p>Ver mas</p>
+                                    <img src="/Materiales/icono-flecha.png" alt="flecha">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="noticia noticia_dos">
+                            <div id="not_6"></div>
+                            <div>
+                                <div id="calendario_reloj">
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-calendario.png" alt="calendario">
+                                        <p>20/08/22</p>
+                                    </div>
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-reloj.png" alt="reloj">
+                                        <p>5 min</p>
+                                    </div>
+                                </div>
+                                <h4 class="text_noticia">Lorem ipsum dolor.</h4>
+                                <p class="text_noticia">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <div id="ver_mas_noticia">
+                                    <p>Ver mas</p>
+                                    <img src="/Materiales/icono-flecha.png" alt="flecha">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="noticia noticia_tres">
+                            <div id="not_7"></div>
+                            <div>
+                                <div id="calendario_reloj">
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-calendario.png" alt="calendario">
+                                        <p>20/08/22</p>
+                                    </div>
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-reloj.png" alt="reloj">
+                                        <p>5 min</p>
+                                    </div>
+                                </div>
+                                <h4 class="text_noticia">Lorem ipsum dolor.</h4>
+                                <p class="text_noticia">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <div id="ver_mas_noticia">
+                                    <p>Ver mas</p>
+                                    <img src="/Materiales/icono-flecha.png" alt="flecha">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="noticia noticia_cuatro">
+                            <div id="not_8"></div>
+                            <div>
+                                <div id="calendario_reloj">
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-calendario.png" alt="calendario">
+                                        <p>20/08/22</p>
+                                    </div>
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-reloj.png" alt="reloj">
+                                        <p>5 min</p>
+                                    </div>
+                                </div>
+                                <h4 class="text_noticia">Lorem ipsum dolor.</h4>
+                                <p class="text_noticia">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <div id="ver_mas_noticia">
+                                    <p>Ver mas</p>
+                                    <img src="/Materiales/icono-flecha.png" alt="flecha">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="noticias">
+                        <div class="noticia noticia_uno">
+                            <div id="not_9"></div>
+                            <div>
+                                <div id="calendario_reloj">
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-calendario.png" alt="calendario">
+                                        <p>20/08/22</p>
+                                    </div>
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-reloj.png" alt="reloj">
+                                        <p>5 min</p>
+                                    </div>
+                                </div>
+                                <h4 class="text_noticia">Lorem ipsum dolor.</h4>
+                                <p class="text_noticia">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <div id="ver_mas_noticia">
+                                    <p>Ver mas</p>
+                                    <img src="/Materiales/icono-flecha.png" alt="flecha">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="noticia noticia_dos">
+                            <div id="not_10"></div>
+                            <div>
+                                <div id="calendario_reloj">
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-calendario.png" alt="calendario">
+                                        <p>20/08/22</p>
+                                    </div>
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-reloj.png" alt="reloj">
+                                        <p>5 min</p>
+                                    </div>
+                                </div>
+                                <h4 class="text_noticia">Lorem ipsum dolor.</h4>
+                                <p class="text_noticia">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <div id="ver_mas_noticia">
+                                    <p>Ver mas</p>
+                                    <img src="/Materiales/icono-flecha.png" alt="flecha">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="noticia noticia_tres">
+                            <div id="not_11"></div>
+                            <div>
+                                <div id="calendario_reloj">
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-calendario.png" alt="calendario">
+                                        <p>20/08/22</p>
+                                    </div>
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-reloj.png" alt="reloj">
+                                        <p>5 min</p>
+                                    </div>
+                                </div>
+                                <h4 class="text_noticia">Lorem ipsum dolor.</h4>
+                                <p class="text_noticia">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <div id="ver_mas_noticia">
+                                    <p>Ver mas</p>
+                                    <img src="/Materiales/icono-flecha.png" alt="flecha">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="noticia noticia_cuatro">
+                            <div id="not_12"></div>
+                            <div>
+                                <div id="calendario_reloj">
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-calendario.png" alt="calendario">
+                                        <p>20/08/22</p>
+                                    </div>
+                                    <div class="calendario_reloj">
+                                        <img src="/Materiales/icono-reloj.png" alt="reloj">
+                                        <p>5 min</p>
+                                    </div>
+                                </div>
+                                <h4 class="text_noticia">Lorem ipsum dolor.</h4>
+                                <p class="text_noticia">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <div id="ver_mas_noticia">
+                                    <p>Ver mas</p>
+                                    <img src="/Materiales/icono-flecha.png" alt="flecha">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <ul class="puntos">
+                    <li class="punto activo"></li>
+                    <li class="punto"></li>
+                    <li class="punto"></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <footer>
+        <div id="formulario">
+            <div id="form_img">
+                <img id="laptop" src="/Materiales/laptop-escritorio.jpg" alt="">
+            </div>
+            <div id="form_contacto">
+                <h1 id="contacto_color">
+                    <center><b>Contacto</b></center>
+                </h1>
+                <form>
+                    <div id="form">
+                        <div>
+                            <label for="name">Nombre:</label><br>
+                            <input type="text" id="name" name="name"><br>
+                            <label for="email">Correo:</label><br>
+                            <input type="email" id="email" name="email"><br>
+                        </div>
+
+                        <div>
+                            <label for="mensaje">Mensaje:</label> <br>
+                            <textarea name="mensaje" placeholder="Escribe tu mensaje aqui..." cols="30"
+                                rows="4"></textarea>
+                        </div>
+
+                    </div>
+                    <input id="btn_enviar" type="submit" value="ENVIAR">
+                </form>
+
+            </div>
+        </div>
+
+
+        <div id="footer">
+            <a href="#body"><img id="logo_blanco" src="/Materiales/logo-blanco.png" alt="logo_blanco"></a>
+            <ul id="lista">
+                <li><a class="link_footer" href="#nosotros">Nosotros</a></li>
+                <li><a class="link_footer" href="#noticias">Noticias</a></li>
+                <li><a class="link_footer" href="#form_contacto">Contacto</a></li>
+                <li><a class="link_footer" href="">Terminos y condiciones</a></li>
+            </ul>
+            <div id="redes">
+                <p>Seguinos!</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/index.js"></script>
+</body>
+</html>
