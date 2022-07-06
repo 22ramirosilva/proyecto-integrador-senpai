@@ -23,11 +23,11 @@ punto.forEach((cadaPunto, i) => {
 
 
 //---------------------MODAL
-let modal = document.getElementById("myModal");
+const modal = document.getElementById("myModal");
 
-let btn = document.getElementById("btn_ingresar");
+const btn = document.getElementById("btn_ingresar");
 
-let span = document.getElementsByClassName("close")[0];
+const span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function () {
     modal.style.display = "block";
